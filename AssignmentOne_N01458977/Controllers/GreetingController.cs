@@ -9,13 +9,21 @@ namespace AssignmentOne_N01458977.Controllers
 {
     public class GreetingController : ApiController
     {
-        // POST api/Greeting
+        /// <summary>
+        /// This methoid returns a string when receiving a post method
+        /// <example> POST api/greeting </example>
+        /// </summary>
+        /// <returns>"Hello World!"</returns>
         public string POST()
         {
             return "Hello World!";
         }
 
-        // GET api/Greeting/5
+        /// <summary>
+        /// This methid returns a string when receiving a get method
+        /// <example> GET api/greeting/5 </example>
+        /// </summary>
+        /// <returns>"Greetings to 5 people!"</returns>
         public string GET(int id)
         {
             return "Greetings to " + id + " people!";

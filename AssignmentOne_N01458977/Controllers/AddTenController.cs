@@ -9,7 +9,11 @@ namespace AssignmentOne_N01458977.Controllers
 {
     public class AddTenController : ApiController
     {
-        // GET api/AddTen/5
+        /// <summary>
+        /// This method returns an int when receiving a get request
+        /// <example> GET api/addten/5 </example>
+        /// </summary>
+        /// <returns>15</returns>
         public int Get(int id)
         {
             return id + 10;
